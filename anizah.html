@@ -2,54 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Teachers' Day Messages</title>
+  <title>Message for Pn. Anizah</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
-      padding: 0;
+      padding: 30px 10px;
       background: linear-gradient(to bottom right, #ffccf9, #cceeff);
       background-image: url('https://www.transparenttextures.com/patterns/hearts.png');
       background-repeat: repeat;
       text-align: center;
     }
-    .container {
-      padding: 60px 20px;
-    }
+
     h1 {
-      font-size: 36px;
       color: #ff69b4;
-      margin-bottom: 10px;
     }
-    p {
-      font-size: 18px;
-      margin-bottom: 30px;
-      color: #333;
-    }
-    button {
-      font-family: 'Poppins', sans-serif;
-      background-color: #ffc1e3;
-      border: none;
+
+    .letter {
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
       border-radius: 20px;
-      padding: 12px 24px;
-      margin: 10px;
-      font-size: 16px;
-      color: #444;
-      cursor: pointer;
-      transition: background 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
-    button:hover {
-      background-color: #ffaad7;
+
+    .video-container {
+      margin: 20px auto;
+    }
+
+    video {
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
   </style>
+  <script>
+    // Password protection
+    const password = prompt("Enter your password:");
+    if (password !== "anizah123") {
+      alert("Wrong password!");
+      window.location.href = "index.html";
+    }
+
+    // Only allow one video to play at a time
+    window.addEventListener('DOMContentLoaded', () => {
+      const videos = document.querySelectorAll('video');
+      videos.forEach((video) => {
+        video.addEventListener('play', () => {
+          videos.forEach(v => {
+            if (v !== video) v.pause();
+          });
+        });
+      });
+    });
+  </script>
 </head>
 <body>
-  <div class="container">
-    <h1>Happy Teachers' Day!</h1>
-    <p>Select your name to view your special message:</p>
-    <button onclick="location.href='anizah.html'">Pn. Anizah</button>
-    <button onclick="location.href='alijiah.html'">Pn. Alijiah</button>
+  <h1>Dear Pn. Anizah,</h1>
+
+  <div class="letter">
+    <p><strong>From: Aina</strong></p>
+    <p>Thank you for always supporting us with patience and smiles!</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Daniel</strong></p>
+    <p>Your lessons are always fun and full of creativity. Happy Teachers' Day!</p>
+  </div>
+
+  <div class="video-container">
+    <video controls>
+      <source src="videos/anizah_aina.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="video-container">
+    <video controls>
+      <source src="videos/anizah_daniel.mp4" type="video/mp4">
+    </video>
   </div>
 </body>
 </html>
