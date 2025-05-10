@@ -2,26 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Message for Pn. Anizah</title>
+  <title>Teachers' Day Messages</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script>
-    const password = prompt("Enter your password:");
-    if (password !== "anizah123") {
-      alert("Wrong password!");
-      window.location.href = "index.html";
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ffccf9, #cceeff);
+      background-image: url('https://www.transparenttextures.com/patterns/hearts.png');
+      background-repeat: repeat;
+      text-align: center;
     }
-  </script>
+    .container {
+      padding: 60px 20px;
+    }
+    h1 {
+      font-size: 36px;
+      color: #ff69b4;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #333;
+    }
+    button {
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffc1e3;
+      border: none;
+      border-radius: 20px;
+      padding: 12px 24px;
+      margin: 10px;
+      font-size: 16px;
+      color: #444;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #ffaad7;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <h1>Dear Pn. Anizah,</h1>
-    <p>You are more than a teacher — you're an inspiration. Thank you for always guiding us with kindness and wisdom. Happy Teachers' Day!</p>
-
-    <video width="400" controls style="margin-top: 20px; border-radius: 10px;">
-      <source src="videos/anizah.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <h1>Happy Teachers' Day!</h1>
+    <p>Select your name to view your special message:</p>
+    <button onclick="location.href='anizah.html'">Pn. Anizah</button>
+    <button onclick="location.href='alijiah.html'">Pn. Alijiah</button>
   </div>
 </body>
 </html>
