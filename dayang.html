@@ -97,12 +97,7 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
   </style>
-  <script>
-    // Password protection
-    const password = prompt("Enter your password:");
-    if (password !== "dayang1234") {
-      alert("Wrong password!");
-      window.location.href = "index.html";
+  <script> 
     }
 
     // Only allow one video to play at a time
@@ -210,5 +205,24 @@
     </video>
   </div>
  </div>
+<script>
+  const CORRECT = "anizah123";
+  const overlay = document.getElementById("loginOverlay");
+  const content = document.getElementById("protectedContent");
+  const btn = document.getElementById("passBtn");
+  const input = document.getElementById("passInput");
+  const err = document.getElementById("errorMsg");
+
+  btn.addEventListener("click", () => {
+    if (input.value === CORRECT) {
+      overlay.style.display = "none";
+      content.style.display = "block";
+      document.body.style.overflow = "auto";
+    } else {
+      err.style.display = "block";
+    }
+  });
+</script>
+
 </body>
 </html>
