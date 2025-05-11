@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Message for you</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 30px 10px;
+      background: linear-gradient(to bottom right, #ffccf9, #cceeff);
+      background-image: url('pictureheart.jpeg');
+      background-repeat: repeat;
+      text-align: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      color: #ff69b4;
+    }
+
+    .letter {
+      background-color: #f7dcf0;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-container {
+      margin: 20px auto;
+    }
+
+    video {
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* --- Login Overlay --- */
+    #loginOverlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(255,255,255,0.9);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+    }
+    #loginOverlay h2 {
+      color: #ff69b4;
+      margin-bottom: 20px;
+    }
+    #loginOverlay input {
+      padding: 12px 16px;
+      border: 2px solid #ff69b4;
+      border-radius: 8px;
+      font-size: 16px;
+      width: 200px;
+      margin-bottom: 12px;
+    }
+    #loginOverlay button {
+      padding: 10px 20px;
+      background: #ffc1e3;
+      border: none;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    #loginOverlay button:hover {
+      background: #ffaad7;
+    }
+
+    /* --- Protected Content --- */
+    #protectedContent {
+      display: none;
+      padding: 30px 10px;
+      overflow-y: auto;
+      height: 100%;
+    }
+    #protectedContent h1 {
+      color: #ff69b4;
+      margin-top: 0;
+    }
+    .letter {
+      background: #fff;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 600px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+  </style>
+  <script>
+    // Password protection
+    const password = prompt("Enter your password:");
+    if (password !== "dayang1234") {
+      alert("Wrong password!");
+      window.location.href = "index.html";
+    }
+
+    // Only allow one video to play at a time
+    window.addEventListener('DOMContentLoaded', () => {
+      const videos = document.querySelectorAll('video');
+      videos.forEach((video) => {
+        video.addEventListener('play', () => {
+          videos.forEach(v => {
+            if (v !== video) v.pause();
+          });
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+<!-- LOGIN OVERLAY -->
+  <div id="loginOverlay">
+    <h2>Enter Your Password</h2>
+    <input type="password" id="passInput" placeholder="Password">
+    <button id="passBtn">Unlock</button>
+    <p id="errorMsg" style="color:#d00; display:none; margin-top:10px;">Wrong password, try again.</p>
+  </div>
+  
+  <div id="protectedContent">
+  <h1>Dear Teacher Anizah,</h1>
+
+  <div class="letter">
+    <p><strong>From: Atifah</strong></p>
+    <p>Hii teacher Anizah! Sempena hari guru ini saya ingin mengucapkan selamat hari guru dan 
+      semoga hari teacher berjalan dengan lancar ;) Terima kasih atas segala usaha 
+       teacher mendidik kami dalam perjalanan menuju ke 
+      arah penentuan segala permulaan kami dan saya ingin memohon maaf 
+      atas kesalahan tingkah laku atau percakapan saya, sekali lagi, happy teacher's day ❤️</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Nikki</strong></p>
+    <p>Hello teacher Anizah🫶🏻 Mau cakap thank you sama teacher sebab 
+      ajar kami dua tahun niii, sangat banyak saya belajar sama teacher! 
+      Sorry teacher sebab belum mampu kasi result cantik tapi janji lepasni saya 
+      kasih A+ especially SPM. 
+      Once again, thank you teacher, happy teacher's day💛</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Esther</strong></p>
+    <p> Happy Teachers' Day! result tdk begitu cantik tpi saya janji pasti akan cantik
+    tu result. Dont worry teacher, i will and thank you so much teacher for being 
+    patience with us, love you so much , once again SELAMAT HARI GURU!</p>
+  </div>
+
+  <div class="letter">
+    <p><Strong>From: Federeco</Strong></p>
+    <p> thank you cikgu</p>
+  </div>
+
+  <div class="letter">
+    <p><strong> From: Lea</strong></p>
+    <p>Hi tcrr, for now masi bnyk yg sa prlu ulang kaji but thanks to you, 
+      I have little left to understand. Chemistry mmng siok! I wish you a healthy 
+      and happy life, happy teacher's day!</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Melvyna</strong></p>
+    <p>hi cgu, tq sbb suda memberi ilmu tentang chemistry selama 2 tahun ni 
+      dan sorryy sebelum ni nakal" sa akan berusaha dptkn result 
+      spm cemerlang dlm subjek chemistry amenn. happy teacher's dayy cikguu 🫶🏻</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Verolisa</strong></p>
+    <p>thank you sudah buat chemistry actually fun and understable, 
+      though a hard subject, teacher berabis ajar and berabis ksh faham, 
+      your dedication, clear teaching and encouragement have truly 
+      helped untk enjoy the subject, I'm forever grateful for 
+      all of teacher's guidance and support 🩵🩵happy teacher's day!!</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Jonathon</strong></p>
+    <p>Thank you cg sebab sentiasa berusaha untuk mengajar chemistry , walaupun 
+      ada masa yg nda terdengar atau benda simple pun nda pandai. 
+      Janji spm dpt A chemistry💪.</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Harraz</strong></p>
+    <p>happy teacher's day cikgu , semoga diberikan kesihatan yang baik serta 
+      dipermudahkan urusan , berkati semua ilmu yang cikgu beri kepada saya 
+      dan doakan kecemerlangan kami sekelas</p>
+  </div>
+   
+
+  <div class="video-container">
+    <video controls>
+      <source src="videos/anizah_aina.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="video-container">
+    <video controls>
+      <source src="videos/anizah_daniel.mp4" type="video/mp4">
+    </video>
+  </div>
+ </div>
+</body>
+</html>
