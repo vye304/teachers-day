@@ -6,6 +6,7 @@ body {
   background-image: url('pictureheart.jpeg');
   background-repeat: repeat;
   text-align: center;
+  overflow: hidden
 }
 
 .container {
@@ -76,6 +77,40 @@ button:hover {
     #loginOverlay button:hover {
       background: #ffaad7;
     }
+
+
+    .letter {
+      background-color: #f7dcf0;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-container {
+      margin: 20px auto;
+    }
+
+    video {
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* --- Protected Content --- */
+    #protectedContent {
+      display: none;
+      padding: 30px 10px;
+      overflow-y: auto;
+      height: 100%;
+    }
+    #protectedContent h1 {
+      color: #ff69b4;
+      margin-top: 0;
+    }
+
 
 /* Smooth page transition */
 body {
