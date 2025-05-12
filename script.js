@@ -1,37 +1,18 @@
-  // Smooth fade-in
-  document.body.classList.add("fade-in");
+function checkPassword() {
+  const pass = document.getElementById("password").value;
+  const error = document.getElementById("error");
 
-  btn.addEventListener("click", () => {
-    if (input.value === CORRECT) {
-      overlay.classList.add("hidden");
-      setTimeout(() => {
-        overlay.style.display = "none";
-        content.classList.add("visible");
-        document.body.style.overflow = "auto";
-      }, 500);
-    } else {
-      err.style.display = "block";
-    }
-  });
+  // Map passwords to pages
+  const passwords = {
+    "anizah123": "anizah.html",
+    "dayang1234": "dayang.html",
+    "norijan678": "norijan.html"
+    // Add more teacher-password pairs here
+  };
 
-  input.addEventListener("keypress", function (event) {
-    if (event.key === "Enter") {
-      btn.click();
-    }
-  });
-
-  // Smooth page transition on link click
-  document.querySelectorAll("a").forEach(link => {
-    const href = link.getAttribute("href");
-    if (href && !href.startsWith("#") && !href.startsWith("javascript")) {
-      link.addEventListener("click", function(e) {
-        e.preventDefault();
-        document.body.classList.remove("fade-in");
-        document.body.style.opacity = 0;
-        setTimeout(() => {
-          window.location.href = href;
-        }, 500);
-      });
-    }
-  });
-});
+  if (passwords[pass]) {
+    window.location.href = passwords[pass];
+  } else {
+    error.style.display = "block";
+  }
+}
