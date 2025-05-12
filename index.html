@@ -2,19 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Teachers' Day Messages</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <title>Teachers' Day Message</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Happy Teachers' Day!</h1>
-    <p>Select your name to view your special message:</p>
-    <button onclick="location.href='anizah.html'">Pn. Anizah</button>
-    <button onclick="location.href='norijan.html'">Pn. Norijan</button>
-    <button onclick="location.href='dayang.html'">Pn. Dayang</button>
-    <button onclick="location.href='christina.html'">Pn. Christina</button>
-    <!-- Add more teacher buttons here -->
+  <div class="login-box">
+    <h2>Enter Your Password</h2>
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="checkPassword()">Unlock</button>
+    <p id="error" style="color: red; display: none;">Wrong password!</p>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
