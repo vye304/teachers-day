@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Message for you</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 30px 10px;
+      background: linear-gradient(to bottom right, #ffccf9, #cceeff);
+      background-image: url('pictureheart.jpeg');
+      background-repeat: repeat;
+      text-align: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      color: #ff69b4;
+    }
+
+    .letter {
+      background-color: #f7dcf0;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-container {
+      margin: 20px auto;
+    }
+
+    video {
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* --- Protected Content --- */
+    #protectedContent {
+      display: none;
+      padding: 30px 10px;
+      overflow-y: auto;
+      height: 100%;
+    }
+    .letter {
+      background: #fff;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 600px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+  </style>
+  <script> 
+    }
+
+    // Only allow one video to play at a time
+    window.addEventListener('DOMContentLoaded', () => {
+      const videos = document.querySelectorAll('video');
+      videos.forEach((video) => {
+        video.addEventListener('play', () => {
+          videos.forEach(v => {
+            if (v !== video) v.pause();
+          });
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  
+  <div class="container">
+  <h1>Cikgu Tengku yang dikasihi,</h1>
+
+  <div class="letter">
+    <p><strong>From: Atifah</strong></p>
+    <p>Assalamualaikum cikgu tengku,
+      Saya ingin mengucapkan selamat menyambut hari guru 
+      dan berterima kasih atas segala bantuan cikgu tambahan 
+      pula segala pengorbanan yang telah cikgu buat especially
+      for our kerja kursus :( saya sangat menghargai jasa cikgu
+      dan saya memohon maaf atas segala salah silap saya dari hujung 
+      rambut hingga hujung kaki, semoga cikgu sentiasa diberkati, 
+      happy teacher's day! ❤️</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Raychel</strong></p>
+    <p>Haiii ticerrrr.. Thank you for showing us that art is 
+      not just about colors and shapes, but about expressing 
+      who we are and seeing the world through a creative lens.
+Your passion for art inspires us to think outside the frame and turn imagination into reality.
+
+Wishing you a day filled with the same creativity and inspiration you bring to us every day.
+muah</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Nicole</strong></p>
+    <p>Cgu, terima kasih sngt sbb sentiasa memahami
+      dan menyayangi kmi smua. Sy sngt bersyukur
+      sbb ada cgu mcm cgu tengku yg prihatin semasa
+      mengajar kmi. Setiap kali ada kelas cgu, sy tida pernah 
+      rsa bosan atau penat sbb suasana semasa kelas cgu sentiasa
+      menyenangkan. Msa spm nnti, smoga sy dpt A+ sperti yg cgu harapkan,
+      dan nnti, bila sy sambung pelajaran, sy tida akan prnh 
+      lupakan smua benda yg cgu sdh ajar kpda sy ❤️</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Jolyne</strong></p>
+    <p>hi cguu
+selamat harii guruu!
+
+I just want to say thank you—not just for teaching me, but for inspiring me, guiding me, and believing in me even when I didn’t believe in myself. to be honest your words have shaped my thoughts i would say tht syaa sngtt” bersyukur dpt cg tengku as my psv subjct even tho psv is not easy as it seem especially for mee..
+you are not just a teacher to me—you are a role model, a mentor, and someone I will always look up to. the kindness you show, the patience you have, and the passion you put into every lesson makes learning a joy and school a place I want to be.
+
+i may not say it every day, but i’m endlessly grateful to have you in my life. thank you for everything you do .You’ve planted seeds of knowledge in me that will bloom for a lifetime.if i had to choose in another life on who’s my teacher gonna be to teach me on psv i will definitely choose cg tengku again n again,klau bukn cg tengku as my psv tcr mungkin sy lama suda drop psv tpi cg sllu motivate sy bgi sya hope tht i can do this (and i really hope i do) sy hrp cg msih bole ttp brsabar n sdia bimbingg sy smpai dpt A espcially spm nnti Amen!💗
+</p>
