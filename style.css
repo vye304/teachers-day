@@ -48,14 +48,3 @@ button:hover {
       width: 200px;
       margin-bottom: 12px;
     }
-
-/* Smooth page transition */
-body {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-/* When page loads */
-body.fade-in {
-  opacity: 1;
-}
