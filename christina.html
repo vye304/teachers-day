@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Message for you</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 30px 10px;
+      background: linear-gradient(to bottom right, #ffccf9, #cceeff);
+      background-image: url('pictureheart.jpeg');
+      background-repeat: repeat;
+      text-align: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      color: #ff69b4;
+    }
+
+    .letter {
+      background-color: #f7dcf0;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-container {
+      margin: 20px auto;
+    }
+
+    video {
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* --- Protected Content --- */
+    #protectedContent {
+      display: none;
+      padding: 30px 10px;
+      overflow-y: auto;
+      height: 100%;
+    }
+
+    /* --- Login Overlay --- */
+    #loginOverlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(255,255,255,0.9);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+    }
+    #loginOverlay h2 {
+      color: #ff69b4;
+      margin-bottom: 20px;
+    }
+    #loginOverlay input {
+      padding: 12px 16px;
+      border: 2px solid #ff69b4;
+      border-radius: 8px;
+      font-size: 16px;
+      width: 200px;
+      margin-bottom: 12px;
+    }
+    #loginOverlay button {
+      padding: 10px 20px;
+      background: #ffc1e3;
+      border: none;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    #loginOverlay button:hover {
+      background: #ffaad7;
+    }
+    #protectedContent h1 {
+      color: #ff69b4;
+      margin-top: 0;
+    }
+    .letter {
+      background: #fff;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 600px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+  </style>
+  <script> 
+    }
+
+    // Only allow one video to play at a time
+    window.addEventListener('DOMContentLoaded', () => {
+      const videos = document.querySelectorAll('video');
+      videos.forEach((video) => {
+        video.addEventListener('play', () => {
+          videos.forEach(v => {
+            if (v !== video) v.pause();
+          });
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+<!-- LOGIN OVERLAY -->
+  <div id="loginOverlay">
+    <h2>Enter Your Password</h2>
+    <input type="password" id="passInput" placeholder="Password">
+    <button id="passBtn">Unlock</button>
+    <p id="errorMsg" style="color:#d00; display:none; margin-top:10px;">Wrong password, try again.</p>
+  </div>
+  
+  <div id="protectedContent">
+  <h1>Cikgu Dayang yang dikasihi,</h1>
+
+  <div class="letter">
+    <p><strong>From: Atifah</strong></p>
+    <p>Hai cikgu Dayang,
+      Sempena hari guru ini saya ingin mengucapkan selamat hari guru dan terima kasih
+      kerana telah mendidik dan mendorong kami dalam menuju ke arah penentu segala 
+      permulaan ini :) Semestinya, jasa cikgu memang tidak terkira jadi insyaallah 
+      saya akan buat yang terbaik dalam tidak mensia-siakan ia, maaf salah silap dari 
+      hujung rambut hingga hujung kaki, selamat hari guru cikgu!</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Nikki</strong></p>
+    <p>Hello cg Dayang🫶🏻 Terima kasih cg sebab ajar kami bm, sangat 
+      siok kami di kelas cg selalu sebab cg santai👏🏻 2 kali exam saya A- , 
+      semua sebab cg yang ajar kami buat karangan dan semua. SPM saya kasih A+ cg. 
+      Selamat hari guru cg unnie🩷
+</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Esther</strong></p>
+    <p>selamat hari guru, cikgu. terima kasih atas segala bimbingan dan
+    usaha cikgu mendidk kami. saya berusaha juga untuk mendapat markah 
+    yang cemerlang di spm nanti. happy teachers' day !! </p>
+  </div>
+
+  <div class="letter">
+    <p><Strong>From: Federeco</Strong></p>
+    <p> thank you cikgu</p>
+  </div>
+
+  <div class="letter">
+    <p><strong> From: Lea</strong></p>
+    <p>Hi cikgu, terima kasih sebab telah memberikan kami ilmu dengan
+    ikhlas.
+      
+    Nelayan duduk di dalam sampan,
+    Segala ilmu akan kusimpan.
+    
+    Semoga cikgu sentiasa gembira dan sihat, selamat hari guru!</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Melvyna</strong></p>
+    <p>selamat sejahtera cgu, saya ingin merangkapkan 
+      sebuah pantun spontan yang tidak seberapa dari
+      saya yang berbentuk 2 rangkap berbunyi demikian :  
+
+bekerja siang hingga larut malam,
+sabar menanti waktu pulang,
+indahnya sungguh masa silam,
+bersama cikgu yang tersayang.
+
+hidangan siap disajikan,
+makan bersama keluarga tersayang,
+selamat hari guru saya ucapkan,
+jasa dan bakti cikgu sentiasa dikenang.
+
+spm subjek bm A+ cikgu amen! 🫶🏻</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Verolisa</strong></p>
+    <p>Selamat hari guru !! Terima kasih sudah ajar kami 
+      dengan penuh sabar dan dedikasi, cikgu buat b.melayu lebih 
+      menarik pastu senang untuk kami faham, kami semua hargai 
+      segala ilmu dan tunjuk ajar yang cikgu sudah bagiii, semoga 
+       cikgu terus diberkati dan dirahmati dalam segala usaha cikgu mendidik anak bangsa🤍🤍.</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Jonathon</strong></p>
+    <p>Tq cg sbb bersabar semasa mengajar bm. Walaupun
+      result sy skrng mas rendah, sy janji SPM dpt gred A utk BM 💪.</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Harraz</strong></p>
+    <p>happy teacher's day cikgu , semoga diberikan kesihatan yang baik serta 
+      dipermudahkan urusan , berkati semua ilmu yang cikgu beri kepada saya 
+      dan doakan kecemerlangan kami sekelas</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Bryan</strong></p>
+    <p>terima kasih cgu sbb ajar kmi utk buat latihan </p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Nicole</strong></p>
+    <p>Hi cgu, terima kasih sbb sentiasa bersabar dgn kerenah
+      sy yg mcm2 🙏🏻 sy bersyukur sbb cgu sentiasa bersemangat 
+      mengajar kmi.. smoga suatu hari nnti sy dan rakan2 sy dpt 
+      membalas smua kebaikan cgu dgn mncapai keputusan cemerlang dalam peperiksaan.. 
+      sorry cgu klau sy prnh buat cgu marah atau jengkel sblm ini.. 
+      tpi apa2 pun, kmi cinta bm ❤️</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Rehuella</strong></p>
+    <p>hi cikgu, selamat hari guru! sa mau formal ba ni
+    cikgu tpi nnti macam tidak ikhlas sa buat sja la. Terima
+    kasih sudah mengajar kami Bahasa Melayu dengan tekun dan penuh dengan 
+    kesabaran. ok sa nd mampu sda formal anyway walaupun kadang2 sa malas mau bt kerja
+    yg cgu bagi sbb sa bt jua sbb sa tau cgu bagi spya sa dapat tingkatkan kemahiran menullis saya lakukan
+    sepanjang cikgu mengajar dalam kelas dan markah saya yang tidak memuaskan (bukan A). okey babai
+    cikgu sa janji spm BM A (A+ klau mampu) </p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Charlotte</strong></p>
+    <p>selamat hari guru cikgu Dayang! terima kasih sbb
+      sudah mengajar kmi bm selama 2 tahun! cara cikgu 
+      mengajar syok dan sy suka 👏🏼 sy janji akan tingkatkan
+      markah bm sy yaa cikgu, sayangg cikgu 🫰🏻</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Aryatie</strong></p>
+    <p>Terima kasih kerana telah mengajar saya
+      bm dan menolong saya meningkatkan gred bm sa👏👏 
+      lps ni saya akan lebih berusaha untuk membuat cikgu lebih bangga🩷</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Yuna</strong></p>
+    <p>Selamat Hari Guru,Cikgu
+    Terima kasih atas bimbingan, kesabaran, dan kasih sayang cikgu dalam
+    mendidik kami. Cikgu sentiasa memberi inspirasi dan semangat. Kami sangat menghargai cikgu!
+    We love bm</p>
+  </div>
+
+  <div class="letter"
+    <p><strong>From: Shean</strong>
+    <p>Hai Cikgu Dayang!Sorry cikgu, saya masih belum dapat
+    capai  A untuk bm, akan usahakanuntuk capai target.
+    Akan usahakan juga untuk siapkan karangan 🙏 Thank you cikgu
+    sudah ajar kmi untuk 2 tahun inii. lurveee bm,
+    lurveee cikgu. Selamat Hari Guru Cikguuu Uni❤️</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Alpie</strong></p>
+    <p>Hai Cikgu, Saya Alpieingin mengucapkan Selamat Hari 
+    Guru kepada cikgu yg sangat rajin dan berusaha untuk mengajar kami.
+    Saya harigai semua itu, dan saya meminta maaf sekiranya saya telah membuat kesalahan
+    selama ini...Semoga cikgu sentiasa sihat dan happy selalu...Thank you cikgu💕</p>
+
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Jaden</strong></p>
+    <p>haiii cg!! selamatt harii guruu !! smogaa cg tetapp sihatt and 
+      dpatt mengajarr dgn penuhh semgtt😼 cg jgnla marahh ii xixi, harapp 
+      cg harii ii happy! thankyouu cikguu sbb sabarr dgn sy biarpun bnyk kerja tidak 
+      siap 😞 sy janjii sm cg sy akan bljr btul ii utk score bm time spm 😼🫶🏻 </p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Jolyne</strong></p>
+    <p>hi tcrr just wanted to say thank you for everything,
+      thankyouu sd sbr ajarr sya i really hope tcr can still guide me i may be THE slow 
+      learner student in your class but i would say tht i always trying my best .
+      i hope tcr will always doing good🫶🏻
+      Happy Teacher’s Day!💗</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Raychel</strong></p>
+    <p>Bunga mawar harum mewangi,
+    tumbuh indah di taman sari.
+    Terima kasih wahai guru sejati,
+    Mendidik kami sepenuh hati
+    
+    Selamat haru guru ciguuuu!!!!</p>
+
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Lydia</strong></p>
+    <p>Salam Malaysia madani cikgu dayang🫡selamat hari guru! janji akan rajin bwt karangan</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Amanda</strong></p>
+    <p>Happy Teacher’s Day!
+
+Today, we celebrate not just the amazing teacher you are, but also the wonderful person behind it all—the one who puts in so much care, patience, and kindness every single day. Your hard work and dedication truly inspire us, and we’re so grateful for everything you do.
+
+Thank you for being both a guide and a friend in the classroom. Wishing you all the happiness and appreciation you deserve today and always!
+
+With heartfelt thanks,
+Amanda</p>
+
+  </div>
+    
+  <div class="letter">
+    <p><strong>From: Joshua</strong></p>
+    <p>thank you cikgu, selamat hari guru !!</p>
+
+  <div>
+    
+    
+  <div class="video-container">
+    <video controls>
+      <source src="videos/anizah_aina.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="video-container">
+    <video controls>
+      <source src="videos/anizah_daniel.mp4" type="video/mp4">
+    </video>
+  </div>
+ </div>
+  <script>
+  const CORRECT = "dayang1234";
+  const overlay = document.getElementById("loginOverlay");
+  const content = document.getElementById("protectedContent");
+  const btn = document.getElementById("passBtn");
+  const input = document.getElementById("passInput");
+  const err = document.getElementById("errorMsg");
+
+  btn.addEventListener("click", () => {
+    if (input.value === CORRECT) {
+      overlay.classList.add("hidden");
+      setTimeout(() => {
+        overlay.style.display = "none";
+        content.style.display = "block";
+      }, 500);
+      document.body.style.overflow = "auto";
+    } else {
+      err.style.display = "block";
+    }
+  });
+      
+      input.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      btn.click();
+    }
+  });
+  </script>
+</body>
+</html>
