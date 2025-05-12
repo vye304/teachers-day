@@ -6,7 +6,8 @@ function checkPassword() {
   const passwords = {
     "anizah123": "anizah.html",
     "dayang1234": "dayang.html",
-    "norijan678": "norijan.html"
+    "norijan678": "norijan.html",
+    "tengku444": "tengku.html"
     // Add more teacher-password pairs here
   };
 
