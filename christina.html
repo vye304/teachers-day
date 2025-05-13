@@ -15,7 +15,6 @@
       background-repeat: repeat;
       text-align: center;
       height: 100vh;
-      overflow: auto;
     }
 
     h1 {
@@ -278,32 +277,5 @@ Amanda</p>
     </video>
   </div>
  </div>
-  <script>
-  const CORRECT = "dayang1234";
-  const overlay = document.getElementById("loginOverlay");
-  const content = document.getElementById("protectedContent");
-  const btn = document.getElementById("passBtn");
-  const input = document.getElementById("passInput");
-  const err = document.getElementById("errorMsg");
-
-  btn.addEventListener("click", () => {
-    if (input.value === CORRECT) {
-      overlay.classList.add("hidden");
-      setTimeout(() => {
-        overlay.style.display = "none";
-        content.style.display = "block";
-      }, 500);
-      document.body.style.overflow = "auto";
-    } else {
-      err.style.display = "block";
-    }
-  });
-      
-      input.addEventListener("keypress", function(event) {
-    if (event.key === "Enter") {
-      btn.click();
-    }
-  });
-  </script>
 </body>
 </html>
