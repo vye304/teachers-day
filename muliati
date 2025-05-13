@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Message for you</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 30px 10px;
+      background: linear-gradient(to bottom right, #ffccf9, #cceeff);
+      background-image: url('pictureheart.jpeg');
+      background-repeat: repeat;
+      text-align: center;
+      height: 100vh;
+    }
+
+    h1 {
+      color: #ff69b4;
+    }
+
+    .letter {
+      background-color: #f7dcf0;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-container {
+      margin: 20px auto;
+    }
+
+    video {
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+  <script> 
+    }
+
+    // Only allow one video to play at a time
+    window.addEventListener('DOMContentLoaded', () => {
+      const videos = document.querySelectorAll('video');
+      videos.forEach((video) => {
+        video.addEventListener('play', () => {
+          videos.forEach(v => {
+            if (v !== video) v.pause();
+          });
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  
+  <div class="container">
+  <h1>Dear Teacher Christina,</h1>
+
+  <div class="letter">
+    <p><strong>From: Atifah</strong></p>
+    <p>Hi teacher Alizah!
+      Sempena hari guru ini saya ingin mengucapkan selamat hari guru teacher! 
+      Maaf atas segala salah silap saya dari hujung rambut hingga hujung kaki,
+      dan saya ingin berterima kasih atas segala tunjuk ajar dan kesabaran teacher 
+      dalam mendidik kami, semoga teacher have a great day dan sekali lagi happy teacher's day ;)</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Nikki</strong></p>
+    <p>Hello teacher Alizah🫶🏻 Mau cakap thank you sama 
+      teacher sebab ajar kami dua tahun niii, sangat banyak
+      ilmu saya belajar sama teacher! Sorry teacher sebab belum
+      mampu kasi result cantik tapi janji lepasni saya kasih 
+      A+ especially SPM. Once again, thank you teacher, happy teacher's day</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Esther</strong></p>
+    <p>happy teachers day, teacher alizah! terima kasih atas segala bimbingan dan
+    usaha cikgu mendidk kami. saya berusaha juga untuk mendapat markah 
+    yang cemerlang di spm nanti. happy teachers' day !! </p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Mozes</strong></p>
+    <p>To a kind and caring teacher, Thanks for always being patient and 
+    helping me learn so much already. Thank you! Happy Teacher's Day
+    !</p>
+    
+  <div class="letter">
+    <p><Strong>From: Federeco</Strong></p>
+    <p> thank you cikgu</p>
+  </div>
+
+  <div class="letter">
+    <p><strong> From: Lea</strong></p>
+    <p>Hi tcr, workbook will be diusahakan before exam hehe.
+      Thank you for being really patient with us and is always 
+      there even though we are quite nakal. I feel like you are
+      not only a teacher in the classroom but also a mother to 
+      me. You always know how to help us with our weakness even 
+      though we are struggling a lot to focus and get ourselves 
+      together. You always give us lots of advice that are meaningful
+      and I appreciate every bit of it since you make me feel
+      loved and cared for, also heard. I hope you have a life full 
+      of happiness ahead of you, happy teacher's day!</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Melvyna</strong></p>
+    <p>hi cgu, tq ats tunjuk ajar cgu dalam subjek bio, jasa 
+      cgu sentiasa dikenang 🫶🏻 sorry juga pandai nakal" sebelum 
+      ni sa akn berusaha sedaya upaya mencapai result spm cemerlang 
+      dlm spm bio nantii amenn. happy teacher's day cikguu 🫶🏻</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Verolisa</strong></p>
+    <p>happy teachers day to you teacher Alizah! thank you for teaching 
+      us biology and also for always caring for all of us in the 
+      class, being patient with us, giving us ways to improve ourselves, 
+      reminding us to always pray and also to believe in ourselves.
+      it means a lot really to know that there is a teacher that cares 
+      about these things. it may seem small and simple to you teacher, 
+      but to me it's very big as i haven't met a teacher like you, teacher btul"
+      the first one and tcer mcm another mom to me (bkn sy ja yg feel this way ni 
+      tcer, ada yg lain pun rsa bgni!) ! i promise i'll try my best to get good 
+      marks for all my subjects (especially biology). smoga spm sy straight 
+      A and bio sy A+ (Amen ya tcer, doakan sy huhu) love you teacher 🫰🏻🫶🏻</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Jonathon</strong></p>
+    <p>Hi bro cikgu, thank you sbb sentiasa bersabar
+    walaupun jwpn bio nda masuk akal sometimes. Sy janji ni tahun 
+    2025, terlahir A+ SPM Bio ✌️✌️ </p>
+  
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Harraz</strong></p>
+    <p>happy teacher's day cikgu , semoga diberikan kesihatan yang baik serta 
+      dipermudahkan urusan , berkati semua ilmu yang cikgu beri kepada saya 
+      dan doakan kecemerlangan kami sekelas</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Bryan</strong></p>
+    <p>thank you tchr your guidance i will do my best on spm bio.</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Nicole</strong></p>
+    <p>Hi cgu, sorry sbb selama ni sy tida beri perhatian 
+      penuh dlm kelas.. tpi thank you sbb sentiasa memberikan panduan 
+      utk kmi smua menjwb exam. Nnti msa spm, sy buat yg terbaik dan smoga 
+      dpt A+.. sy akan berusaha dan bljr rajin2 utk jdi pelajar cemerlang yg 
+      cgu harapkan ❤️</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Rehuella</strong></p>
+    <p>hi cgu, happy teacher's day! thankyou cg sdh ajar bio dgn tekun and penuh 
+      kesabaran and yg tc berusaha mo buat kmi
+      smua lulus bio and i had a fun time bljr bio walaupun kdg sa stres membaca 
+      buku teks tpi fun sbb ada cg 😍 anyway i want to apologize sbb sa pny 
+      markah sgt tidak memuaskan yang nyawa2 ikan ja :( tpi sa janji sa akan 
+      berusaha dan ikut tu lakaran impian ( lowkey lupa apa sa tulis ) and get 
+      a good grade in my spm, BOLE NI A aminn okey babai tc</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Charlotte</strong></p>
+    <p>happy teachers day to you teacher Alizah! thank
+      you for teaching us biology and also for always caring for 
+      all of us in the class, being patient with us, giving us 
+      ways to improve ourselves, reminding us to always pray and 
+      also to believe in ourselves. it means a lot really to know 
+      that there is a teacher that cares about these things. it 
+      may seem small and simple to you teacher, but to me it's 
+      very big as i haven't met a teacher like you, teacher 
+      btul" the first one and tcer mcm another mom to me (bkn 
+      sy ja yg feel this way ni tcer, ada yg lain pun rsa bgni!) ! 
+      i promise i'll try my best to get good marks for all my 
+      subjects (especially biology). smoga spm sy straight A and bio 
+      sy A+ (Amen ya tcer, doakan sy huhu) love you teacher 🫰🏻🫶🏻</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Aryatie</strong></p>
+    <p>happy teachers day to you teacher Alizah! thank you for teaching 
+      us biology and also for always caring for all of us in the 
+      class, being patient with us, giving us ways to improve ourselves, 
+      reminding us to always pray and also to believe in ourselves.
+      it means a lot really to know that there is a teacher that cares 
+      about these things. it may seem small and simple to you teacher, 
+      but to me it's very big as i haven't met a teacher like you, teacher btul"
+      the first one and tcer mcm another mom to me (bkn sy ja yg feel this way ni 
+      tcer, ada yg lain pun rsa bgni!) ! i promise i'll try my best to get good 
+      marks for all my subjects (especially biology). smoga spm sy straight 
+      A and bio sy A+ (Amen ya tcer, doakan sy huhu) love you teacher 🫰🏻🫶🏻</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Yuna</strong></p>
+    <p>Selamat hari guru, cikgu
+    Terima kasih kerana tak putus asa mendidik kami walaupun result bio kami tidak mencapai
+    expectation cikgu. Cikgu sentiasa mendorong kami untuk mencapai potensi terbaik kami. Jasa cikgu akan dikenang
+    selamanya! We loveee bio</p>
+  </div>
+
+  <div class="letter"
+    <p><strong>From: Shean</strong>
+    <p>Hai Cikgu Alizah!! Thank you cikgu sudah ajar kami untuk ni 2 tahun.
+      Thank you cikgu make vibe kls jadi santai sija sllu hehe. Teguran
+      cikgu sentiasa diingati juga di otak, thank you cikgu sllu tegur kami, kami faham 
+      juga untuk kebaikan kami hihi. And sorry cikgu kalau sy ada terkasar kata sama cikgu
+      🙏🏻Semoga dimaafin yaa hehe. lastt, Happy teacher's day, teacher!!!🤍</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Alpie</strong></p>
+    <p>Hai Cikgu, Saya Alpie ingin mengucapkan Selamat Hari 
+    Guru kepada cikgu yg sangat rajin dan berusaha untuk mengajar kami.
+    Saya harigai semua itu, dan saya meminta maaf sekiranya saya telah membuat kesalahan
+    selama ini...Semoga cikgu sentiasa sihat dan happy selalu...Thank you cikgu💕</p>
+
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Jaden</strong></p>
+    <p>HAPPY TEACHERS DAYYY !!! saya janji score bio spm cikgu xixixi 😼 
+      thankyouu cikguu sudahh sabarr dgn saya biarpun hw banyakk 
+      sy tida siap and sllu tidur di kelas 😞 sy harapp cikguu kekal
+      sihatt and tida marahh ii and dpatt mengajarr dgn penuhh smgt 😼🫶🏻 </p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Jolyne</strong></p>
+    <p>hi tcrr just wanted to say thank you for everything,
+      thankyouu sd sbr ajarr sya i really hope tcr can still guide me i may be THE slow 
+      learner student in your class but i would say tht i always trying my best .
+      i hope tcr will always doing good🫶🏻
+      Happy Teacher’s Day!💗</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Raychel</strong></p>
+    <p>Hello teacherrr...Wishing you a meaningful Teachers' Day. Your
+    dedication to education is truly commendable.</p>
+
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Lydia</strong></p>
+    <p>Happy teachers day cikgu alizah! we love bio aye</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Amanda</strong></p>
+    <p>Happy Teacher’s Day!
+
+Today, we celebrate not just the amazing teacher you are, but also the wonderful person behind it all—the one who puts in so much care, patience, and kindness every single day. Your hard work and dedication truly inspire us, and we’re so grateful for everything you do.
+
+Thank you for being both a guide and a friend in the classroom. Wishing you all the happiness and appreciation you deserve today and always!
+
+With heartfelt thanks,
+Amanda</p>
+
+  </div>
+    
+  <div class="letter">
+    <p><strong>From: Joshua</strong></p>
+    <p>thank you cikgu, selamat hari guru !!</p>
+  </div>
+    
+    
+  <div class="video-container">
+    <video controls>
+      <source src="videos/anizah_aina.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="video-container">
+    <video controls>
+      <source src="videos/anizah_daniel.mp4" type="video/mp4">
+    </video>
+  </div>
+ </div>
+</body>
+</html>
