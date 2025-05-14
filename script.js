@@ -9,7 +9,15 @@ function checkPassword() {
     "norijan678": "norijan.html",
     "tengku444": "tengku.html",
     "christina123": "christina.html",
-    "anizah123": "anizah.html",
+    "alizah123": "alizah.html",
+    "muliati123": "muliati.html",
+    "jacqueline123": "jacqueline.html",
+    "jamaliah123": "jamaliah",
+    "tsang123": "tsang.html",
+    "rafizah123": "rafizah.html",
+    "aswarina123": "aswarina.html"
+    "nancy123": "nancy.html",
+    
     // Add more teacher-password pairs here
   };
 
