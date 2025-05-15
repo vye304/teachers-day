@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Message for you</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 30px 10px;
+      background: linear-gradient(to bottom right, #ffccf9, #cceeff);
+      background-image: url('pictureheart.jpeg');
+      background-repeat: repeat;
+      text-align: center;
+      height: 100vh;
+    }
+
+    h1 {
+      color: #ff69b4;
+    }
+
+    .letter {
+      background-color: #f7dcf0;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-container {
+      margin: 20px auto;
+    }
+
+    video {
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+  <script> 
+    }
+
+    // Only allow one video to play at a time
+    window.addEventListener('DOMContentLoaded', () => {
+      const videos = document.querySelectorAll('video');
+      videos.forEach((video) => {
+        video.addEventListener('play', () => {
+          videos.forEach(v => {
+            if (v !== video) v.pause();
+          });
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  
+  <div class="container">
+  <h1>Ustazah Rafizah yang dikasihi,</h1>
+
+  <div class="letter">
+    <p><strong>From: Atifah</strong></p>
+    <p>Assalamualaikum ustazah!
+Sempena hari guru ini saya ingin mengucapkan selamat
+hari guru dan berterima kasih atas segala bantuan ustazah
+mengiringi kami menuju ke arah spm, saya juga ingin 
+berterima kasih atas segala peringatan ustazah di group 
+atau di sekolah, mohon maaf dari hujung rambut hingga hujung 
+kaki jikalau perbuatan atau percakapan saya menyinggung hati, semoga 
+ustazah sentiasa diberkati Allah, fi hifzillah ya ustazah :)</p>
+  </div>
+
+  <div class="letter">
+    <p><strong>From: Harraz</strong></p>
+    <p>happy teacher's day cikgu , semoga diberikan kesihatan yang baik serta 
+      dipermudahkan urusan , berkati semua ilmu yang cikgu beri kepada saya 
+      dan doakan kecemerlangan kami sekelas</p>
+  </div>
+ </div>
+</body>
+</html>
