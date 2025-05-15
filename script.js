@@ -14,7 +14,7 @@ function checkPassword() {
       "jamaliah123": "jamaliah.html",
       "tsang123": "tsang.html",
       "rafizah123": "rafizah.html",
-      "aswarina123": "aswarina.html",
+      "asrawina123": "asrawina.html",
       "nancy123": "nancy.html"
     };
 
