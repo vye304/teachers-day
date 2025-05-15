@@ -1,5 +1,12 @@
+@font-face {
+  font-family: 'Porky';
+  src: url('PORKYS_.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Porky', sans-serif;
       margin: 0;
       padding: 30px 10px;
       background: linear-gradient(to bottom right, #ffccf9, #cceeff);
