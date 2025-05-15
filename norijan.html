@@ -41,22 +41,6 @@
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
-    
-    /* --- Protected Content --- */
-    #protectedContent {
-      display: none;
-      padding: 30px 10px;
-      overflow-y: auto;
-      height: 100%;
-    }
-    .letter {
-      background: #fff;
-      margin: 20px auto;
-      padding: 20px;
-      max-width: 600px;
-      border-radius: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
   </style>
   <script> 
     }
@@ -141,7 +125,7 @@
 
   <div class="letter">
     <p><strong>From: Jonathon</strong></p>
-    <p>Thank you cg sbb sentiasa mengajar maths dngn cara paling simlle, and sentiasa supportive💪. Sy janji SPM maths dpt A hehrherhehrhe</p>
+    <p>Thank you cg sbb sentiasa mengajar maths dngn cara paling simple, and sentiasa supportive💪. Sy janji SPM maths dpt A hehrherhehrhe</p>
   </div>
 
   <div class="letter">
@@ -269,47 +253,8 @@ Amanda</p>
     <p><strong>From: Joshua</strong></p>
     <p>thank you cikgu, selamat hari guru !!</p>
 
-  <div>
-    
-    
-  <div class="video-container">
-    <video controls>
-      <source src="videos/anizah_aina.mp4" type="video/mp4">
-    </video>
   </div>
-
-  <div class="video-container">
-    <video controls>
-      <source src="videos/anizah_daniel.mp4" type="video/mp4">
-    </video>
-  </div>
- </div>
-  <script>
-  const CORRECT = "dayang1234";
-  const overlay = document.getElementById("loginOverlay");
-  const content = document.getElementById("protectedContent");
-  const btn = document.getElementById("passBtn");
-  const input = document.getElementById("passInput");
-  const err = document.getElementById("errorMsg");
-
-  btn.addEventListener("click", () => {
-    if (input.value === CORRECT) {
-      overlay.classList.add("hidden");
-      setTimeout(() => {
-        overlay.style.display = "none";
-        content.style.display = "block";
-      }, 500);
-      document.body.style.overflow = "auto";
-    } else {
-      err.style.display = "block";
-    }
-  });
-      
-      input.addEventListener("keypress", function(event) {
-    if (event.key === "Enter") {
-      btn.click();
-    }
-  });
-  </script>
+    
+  </div>  
 </body>
 </html>
